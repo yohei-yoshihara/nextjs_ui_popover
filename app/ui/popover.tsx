@@ -25,6 +25,7 @@ export default function Popover({ children, content }: Props) {
   return (
     <div className="relative inline-block" ref={ref}>
       <button
+        type="button"
         ref={triggerRef}
         onClick={toggleVisibility}
         className="bg-blue-500 text-white p-2 cursor-pointer rounded-md"
